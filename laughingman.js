@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     squareElement.addEventListener("click", function(){
         alert("OMG YOU CAUGHT ME!");
+        });
 
-    });
+    squareElement.addEventListener('mouseover', function(){
+        squareElement.style.backgroundColor = getRandomColor();
+    }); //random color 4 the red box upon mouseover
+
+    
 
     let box = document.querySelector("#box");
 
@@ -32,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function(){
             //brings back OG laughing man pic
 
         });
+
+        
 
 
         box.appendChild(square);
